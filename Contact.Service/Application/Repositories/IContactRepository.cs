@@ -3,7 +3,7 @@ using Domain.Entities;
 
 namespace Application.Repositories;
 
-public interface IContactRepository : IAsyncRepository<Contact, Guid>
+public interface IContactRepository : IAsyncRepository<Contact, Guid>, IRepository<Contact, Guid>
 {
     
 }
