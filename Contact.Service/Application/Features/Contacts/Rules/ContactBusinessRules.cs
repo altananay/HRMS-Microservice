@@ -18,7 +18,7 @@ public class ContactBusinessRules : BaseBusinessRules
     public async Task CheckIfContactExists(Guid id)
     {
         Contact? contact = await _contactRepository.GetAsync(predicate: c => c.Id == id);
-        if (contact != null)
+        if (contact == null)
         {
             throw new BusinessException(ContactMessages.ContactDoesNotExists);
         }

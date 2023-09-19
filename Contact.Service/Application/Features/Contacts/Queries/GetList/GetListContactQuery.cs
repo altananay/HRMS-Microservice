@@ -26,7 +26,7 @@ public class GetListContactQuery : IRequest<GetListResponse<GetListContactListIt
 
         public async Task<GetListResponse<GetListContactListItemDto>> Handle(GetListContactQuery request, CancellationToken cancellationToken)
         {
-            Paginate<Contact> contacts = await _contactRepository.GetListAsync(index: request.PageRequest.PageIndex, size: request.PageRequest.PageSize, cancellationToken: cancellationToken);
+            Paginate<Contact> contacts = await _contactRepository.GetListAsync(index: request.PageRequest.PageIndex, size: request.PageRequest.PageSize, cancellationToken: cancellationToken, enableTracking: false);
 
             GetListResponse<GetListContactListItemDto> response = _mapper.Map<GetListResponse<GetListContactListItemDto>>(contacts);
             return response;

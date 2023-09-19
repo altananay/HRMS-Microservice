@@ -5,25 +5,27 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core.Packages", "Core.Packages", "{82333BFC-A4AC-4BAC-9366-0F8E4013DBCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Packages\Core.Application\Core.Application.csproj", "{7F43EAE8-EA55-45F2-8127-6DCB7552FBB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application", "Core.Packages\Core.Application\Core.Application.csproj", "{7F43EAE8-EA55-45F2-8127-6DCB7552FBB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCuttingConcerns", "Core.Packages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj", "{8449A7B3-12DA-4575-BFE0-872DB88C687B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcerns", "Core.Packages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj", "{8449A7B3-12DA-4575-BFE0-872DB88C687B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "Core.Packages\Core.Persistence\Core.Persistence.csproj", "{E6F6A0FF-2E2C-45F5-A223-89E1D9FE2470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "Core.Packages\Core.Persistence\Core.Persistence.csproj", "{E6F6A0FF-2E2C-45F5-A223-89E1D9FE2470}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Employer.Service", "Employer.Service", "{07B23003-1679-4730-BE72-92FB1F50F057}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contact.Service", "Contact.Service", "{A0A978F4-3069-442A-A6F7-F8575031DBBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Contact.Service\Application\Application.csproj", "{F9490688-1182-402B-BA4D-503D89FCAB36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Contact.Service\Application\Application.csproj", "{F9490688-1182-402B-BA4D-503D89FCAB36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Contact.Service\Persistence\Persistence.csproj", "{6C6541F8-7231-44E9-ABF5-2B79822CA09D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Contact.Service\Persistence\Persistence.csproj", "{6C6541F8-7231-44E9-ABF5-2B79822CA09D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Contact.Service\Domain\Domain.csproj", "{9E15DD4F-623B-4D8E-A380-61AF3B2A8E78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Contact.Service\Domain\Domain.csproj", "{9E15DD4F-623B-4D8E-A380-61AF3B2A8E78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Contact.Service\Infrastructure\Infrastructure.csproj", "{07BDE9A5-EB50-45B3-9DD3-03497D7193C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Contact.Service\Infrastructure\Infrastructure.csproj", "{07BDE9A5-EB50-45B3-9DD3-03497D7193C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "Contact.Service\WebAPI\WebAPI.csproj", "{C3522F57-2C5C-40F7-9AC1-0E8946582E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "Contact.Service\WebAPI\WebAPI.csproj", "{C3522F57-2C5C-40F7-9AC1-0E8946582E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Gateway", "API.Gateway\API.Gateway.csproj", "{6EAEBA4F-8B0F-42AF-92BA-FCAB28E08327}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{C3522F57-2C5C-40F7-9AC1-0E8946582E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3522F57-2C5C-40F7-9AC1-0E8946582E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3522F57-2C5C-40F7-9AC1-0E8946582E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EAEBA4F-8B0F-42AF-92BA-FCAB28E08327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EAEBA4F-8B0F-42AF-92BA-FCAB28E08327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EAEBA4F-8B0F-42AF-92BA-FCAB28E08327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EAEBA4F-8B0F-42AF-92BA-FCAB28E08327}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
