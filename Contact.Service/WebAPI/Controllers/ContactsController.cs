@@ -6,8 +6,8 @@ using Application.Features.Contacts.Queries.GetById;
 using Application.Features.Contacts.Queries.GetList;
 using Core.Application.Requests;
 using Core.Application.Responses;
+using Core.WebAPI;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Controllers.Base;
 
 namespace WebAPI.Controllers
 {

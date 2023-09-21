@@ -1,5 +1,4 @@
 ﻿using Application.Features.Contacts.Dtos;
-using Application.Features.Contacts.Rules;
 using Application.Repositories;
 using AutoMapper;
 using Domain.Entities;

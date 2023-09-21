@@ -62,6 +62,66 @@
           "Port": 7108
         }
       ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/gateway/jobseekers/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/jobseekers/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7282
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/gateway/jobseekers?PageIndex={pageIndex}&PageSize={pageSize}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/jobseekers?PageIndex={pageIndex}&PageSize={pageSize}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7282
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/gateway/jobseekers",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/jobseekers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7282
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/gateway/jobseekers",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/jobseekers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7282
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/gateway/jobseekers/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/jobseekers/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7282
+        }
+      ]
     }
   ]
 }

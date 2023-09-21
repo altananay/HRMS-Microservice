@@ -26,6 +26,7 @@ public class GetByIdContactQuery : IRequest<GetByIdContactResponse>
 
         public async Task<GetByIdContactResponse> Handle(GetByIdContactQuery request, CancellationToken cancellationToken)
         {
+            await _businessRules.CheckIfContactExists(request.Id);
             Contact? contact = await _contactRepository.GetAsync(predicate: c => c.Id == request.Id, withDeleted: false);
 
             GetByIdContactResponse response = _mapper.Map<GetByIdContactResponse>(contact);

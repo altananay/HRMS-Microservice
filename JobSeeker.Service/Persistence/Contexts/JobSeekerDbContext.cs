@@ -5,12 +5,12 @@ using System.Reflection;
 
 namespace Persistence.Contexts;
 
-public class ContactDbContext : DbContext
+public class JobSeekerDbContext : DbContext
 {
     protected IConfiguration Configuration { get; set; }
-    public DbSet<Contact> Contacts { get; set; }
+    public DbSet<JobSeeker> JobSeekers { get; set; }
 
-    public ContactDbContext(DbContextOptions options, IConfiguration configuration) : base(options)
+    public JobSeekerDbContext(DbContextOptions options, IConfiguration configuration) : base(options)
     {
         Configuration = configuration;
     }
@@ -19,5 +19,4 @@ public class ContactDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
-
 }
